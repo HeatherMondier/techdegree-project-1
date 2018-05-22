@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -52,12 +52,12 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: rgb(217, 40, 183)
 }
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/headerpic.png') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -66,15 +66,15 @@ header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 10px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
+  border-radius: 25%;
+  border: 5px dotted rgb(0, 0, 0);
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(.75) rotate(-3deg);
 }
 .tag {
   background-color: #efefef;
@@ -83,23 +83,23 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
-} 
+}
 .location {
   background-color: #222;
-  color: yellow;
+  color: pink;
 }
 .card {
-  margin: 30px;
-  padding: 20px 40px 40px;
+  margin: 10px;
+  padding: 20px 40px 20px;
   max-width: 500px;
   text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  background: #ccc4c4;
+  border-bottom: 4px dotted #ccc;
+  border-radius: 5px;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: rgb(213, 46, 196);
 }
 
 ul.skills {
@@ -108,22 +108,22 @@ ul.skills {
 }
 
 .skills li {
-  border-radius: 6px;
+  border-radius: 10px;
   display: inline-block;
-  background: #ff9904;
+  background: #ee0768;
   color: white;
-  padding: 5px 10px;
-  margin: 2px;
+  padding: 10px 20px;
+  margin: 5px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #000000;
 }
 
 footer {
   width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+  min-height: 20px;
+  padding: 5px 0 20px 20px;
 }
 
 footer .copyright {
@@ -169,10 +169,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -204,4 +204,3 @@ a.social:hover {
   }
 
 }
-
